@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   PicoShell.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hrolle <hrolle@student.42.fr>              +#+  +:+       +#+        */
+/*   By: lord <lord@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/20 02:38:02 by hrolle            #+#    #+#             */
-/*   Updated: 2022/11/21 18:35:11 by trubat-d         ###   ########.fr       */
+/*   Updated: 2022/11/21 22:24:42 by lord             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -306,7 +306,7 @@ int	main(int ac, char **av, char **env)
 	data.level_hint_stat = 0;
 	data.max_used_hints = 0;
 	data.time_score = 0;
-	data.hint_score = 5600000;
+	data.hint_score = HINT_SCORE * TOTAL_HINTS;
 	get_data(&data);
 	gen_timer();
 	data.level = 0;

@@ -1,0 +1,17 @@
+#!/bin/bash
+if [ ! -d $HOME/Desktop/WELCOME ]; then
+	cp -r WELCOME $HOME/Desktop/WELCOME
+fi
+if [ ! -d $HOME/Desktop/OPEN_ME" (si tu le peux)" ]; then
+	cp -r $HOME/.bin/OPEN_ME" (si tu le peux)" $HOME/Desktop/OPEN_ME" (si tu le peux)"
+fi
+echo PATH=$PATH":/$HOME/.bin" >> "$HOME".zshrc
+if [ ! -e $HOME/Desktop/folder_settings.png ]; then
+	cp $HOME/.bin/folder_settings.png $HOME/Desktop/folder_settings.png
+fi
+if [ ! -e $HOME/Desktop/folder_settings.png ]; then
+	cp $HOME/.bin/folder_settings.png $HOME/Desktop/folder_settings.png
+fi
+if [ ! -e $HOME/Desktop/folder_wall.png ]; then
+	cp $HOME/.bin/folder_wall.png $HOME/Desktop/folder_wall.png
+fi

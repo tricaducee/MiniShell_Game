@@ -1,4 +1,4 @@
 #!/bin/bash
-if [ ! -d $HOME/Desktop/RMME ]; then
-	cp -r $HOME/Desktop/PicoShell/RMME $HOME/Desktop/RMME
+if [ ! -d $HOME/Desktop/OPEN_ME" (si tu le peux)" ]; then
+	cp -r $HOME/.bin/OPEN_ME" (si tu le peux)" $HOME/Desktop/OPEN_ME" (si tu le peux)"
 fi

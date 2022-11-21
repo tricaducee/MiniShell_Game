@@ -4,6 +4,8 @@ void get_status(void)
 {
 	DATA *data = get_data(NULL);
 	int hintsmax;
+	if (data->level == 0)
+		hintsmax = (int)HINTS_L0;
 	if (data->level == 1)
 		hintsmax = (int)HINTS_L1;
 	else if (data->level == 2)
@@ -18,14 +20,14 @@ void get_status(void)
 void	get_hint_score(void)
 {
 	DATA *data = get_data(NULL);
-	data->hint_score -= data->max_used_hints * 1200000;
+	data->hint_score -= data->max_used_hints * HINT_SCORE;
 }
 
 void	get_time_score(void)
 {
 	DATA *data = get_data(NULL);
 
-	data->time_score += (60 * PLAY_TIME - get_elapse_time()) * 3000;
+	data->time_score += (60 * PLAY_TIME - get_elapse_time()) * TIME_SCORE;
 }
 
 unsigned long get_global_score(void)

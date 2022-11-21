@@ -6,6 +6,7 @@
 # define KEY_3 "piscine"//"student_key"
 # define KEY_4 "SL@GOON"//"remove_me"
 # define PLAY_TIME 60
+# define TIME_SCORE 3000
 # include "../printfd/HEADER/ft_printfd.h"
 # include "man.h"
 # include "get_next_line.h"

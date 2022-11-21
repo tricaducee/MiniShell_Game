@@ -3,6 +3,13 @@
 void	adjust_level_hint(DATA *data)
 {
 	data->level_hint_stat += 1;
+	if (data->level == 0)
+	{
+		if (data->level_hint_stat == HINTS_L0)
+			data->level_hint_stat = 0;
+		if (data->max_used_hints < HINTS_L0)
+			data->max_used_hints += 1;
+	}
 	if (data->level == 1)
 	{
 		if (data->level_hint_stat == HINTS_L1)
@@ -30,6 +37,12 @@ char	*hint(int level, int num)
 {
 	switch(level)
 	{
+		case 0:
+			switch (num)
+			{
+				case 0:
+					return ("Le terminal peut afficher du noir sur du noir !");
+			}
 		case 1:
 			switch (num)
 			{
@@ -61,7 +74,7 @@ char	*hint(int level, int num)
 void	get_hint(void)
 {
 	DATA *data = get_data(NULL);
-	if (data->level < 1 || data->level > 3)
+	if (data->level < 0 || data->level > 3)
 		return ;
 	ft_printfd(1, "Votre indice : [#g%s#0]\n", hint(data->level, data->level_hint_stat));
 	adjust_level_hint(data);

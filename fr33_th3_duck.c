@@ -10,7 +10,7 @@ int	fr33_th3_duck(void)
 		return (1);
 	else if (!pid)
 	{
-		chdir("/Users/hrolle/Desktop/PicoShell/So_long");
+		chdir("/Users/user42/.bin/So_long");
 		execve("./so_long", av, get_data(NULL)->env);
 		exit(1);
 	}
