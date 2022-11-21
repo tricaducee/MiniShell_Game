@@ -156,13 +156,15 @@ void	fallout(void)
 {
 	char	*address_base;
 	char	*input;
-	int		fd = open("words.txt", O_RDONLY);
+	int		fd = open("/Users/user42/.bin/words.txt", O_RDONLY);
 	char	**general_list;
 	char	**word_list;
 	char	*password;
 	int		diffs;
 	int		tries = 0;
 
+	if (fd == -1)
+		return ;
 	srand((unsigned int)(time(NULL) * getpid()));
 	general_list = gen_word_list(fd);
 	while (1)
