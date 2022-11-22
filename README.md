@@ -6,7 +6,7 @@ Install PicoShell :
 3. Supprimer du doc et du bureau tout ce qui est superflue (ne laisser dans le dock que
 	iterm2)
 4. Taper dans le terminal : ```cd ~ && git clone https://github.com/tricaducee/PicoShell.git 
-	bin && cd ".bin" && ./install```
+	.bin && cd .bin && ./install```
 5. Set as default les folder et set les réglages icon size et grid spacing as default comme
 	sur l’image folder_settings et avec l’image folder_wall du dossier qui c'est ouvert, set le
 	folder WELCOM à color et en blanc
