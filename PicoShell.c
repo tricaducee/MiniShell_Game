@@ -6,7 +6,7 @@
 /*   By: hermesrolle <hermesrolle@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/20 02:38:02 by hrolle            #+#    #+#             */
-/*   Updated: 2022/11/22 05:34:11 by hermesrolle      ###   ########.fr       */
+/*   Updated: 2022/11/22 06:33:25 by hermesrolle      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -310,7 +310,7 @@ int	main(int ac, char **av, char **env)
 	get_data(&data);
 	gen_timer();
 	data.level = 0;
-	//fallout();
+	fallout();
 	ft_printfd(1, "Your start key :\n#k%s#0\n", KEY_1);
 	print_minishell();
 	while (1)
