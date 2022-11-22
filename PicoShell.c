@@ -6,7 +6,7 @@
 /*   By: hermesrolle <hermesrolle@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/20 02:38:02 by hrolle            #+#    #+#             */
-/*   Updated: 2022/11/22 03:44:34 by hermesrolle      ###   ########.fr       */
+/*   Updated: 2022/11/22 05:34:11 by hermesrolle      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -150,7 +150,7 @@ void	key(char **av)
 		{
 			if (level_up(key_val))
 			{
-				ft_printfd(1, "\nSauve le cannard de 42 ! Entre fr33_th3_duck dans PicoShell !!!\n\n");
+				ft_printfd(1, "\nSauve le cannard de 42 ! Entre fr33_th3_duck dans MiniShell !!!\n\n");
 			}
 		}
 		else
@@ -250,7 +250,7 @@ void run_fr33_th3_duck(char **ss)
 				while (run)
 				{	
 					print_gameover();
-					ft_printfd(1, "\nPour retry tape                    : y\nPour abandonné et tout perdre tape : n\nPicoShell $> ");
+					ft_printfd(1, "\nPour retry tape                    : y\nPour abandonné et tout perdre tape : n\nMiniShell $> ");
 					line = get_next_line(1);
 					if (!line || !*line)
 						run = 1;
@@ -310,11 +310,12 @@ int	main(int ac, char **av, char **env)
 	get_data(&data);
 	gen_timer();
 	data.level = 0;
-	fallout();
+	//fallout();
 	ft_printfd(1, "Your start key :\n#k%s#0\n", KEY_1);
+	print_minishell();
 	while (1)
 	{
-		ft_printfd(1, "PicoShell $> ");
+		ft_printfd(1, "MiniShell $> ");
 		ss = ft_split(get_next_line(0), ' ');
 		if (ss)
 		{

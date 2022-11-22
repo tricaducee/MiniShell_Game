@@ -1,4 +1,4 @@
-indice : est une commande du picoshell permettant d'obtenir un indice supplementaire vous coutant ainsi des points de scores.
+indice : est une commande du MiniShell permettant d'obtenir un indice supplementaire vous coutant ainsi des points de scores.
 
 status : est une commande qui affiche le status actuelle de votre evolution dans l'escape game.
 

@@ -52,5 +52,27 @@ void			get_hint_score(void);
 void			free_tab(char **ss);
 void			print_score(void);
 void			show_elapse_time(void);
+void			print_minishell(void);
+void			back_to_the_future(void);
+void			image_1(int back);
+void			image_2(int back);
+void			image_3(int back);
+void			image_4(int back);
+void			image_5(int back);
+void			image_6(int back);
+void			image_7(int back);
+void			image_8(int back);
+void			image_9(int back);
+void			image_10(int back);
+void			image_11(int back);
+void			image_12(int back);
+void			image_13(int back);
+void			image_14(int back);
+void			image_15(int back);
+void			image_16(int back);
+void			image_17(int back);
+void			image_18(int back);
+void			image_19(int back);
+void			image_20(int back);
 
 #endif

@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: hrolle <hrolle@student.42.fr>              +#+  +:+       +#+         #
+#    By: hermesrolle <hermesrolle@student.42.fr>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/07 19:48:42 by hrolle            #+#    #+#              #
-#    Updated: 2022/11/20 02:31:25 by hrolle           ###   ########.fr        #
+#    Updated: 2022/11/22 05:32:10 by hermesrolle      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,7 @@ SRC = $(wildcard *.c */*.c)
 
 OBJ = $(SRC:.c=.o)
 
-NAME = PicoShell
+NAME = MiniShell
 
 CC = gcc
 
