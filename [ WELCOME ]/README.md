@@ -19,10 +19,10 @@ il vous faudra user de leur manuel en utilisant la commande "man" pour les decou
 man suivis des fonctions pour trouver leur utilitée a chacune.
 
 La premiere epreuve constistera a hacker le mot de passe pour accéder a l'infrastructure du systeme.
-Afin de reussir, il vous faudra trouver le mot de passe parmis les 20 mots cachés dans le texte.
+Afin de reussir, il vous faudra trouver le mot de passe
+"un des mots cachés entre des caractères spéciaux mais sans ces caractères".
 Nous vous fourniront a chaque tentatives, le nombre de lettres qui se trouvent aussi dans le mot de passe.
 Cependant, gare a vous ! vous n'aurez que 5 essaie avant que la grille change.
 
 PS: Une fois MiniShell lancé, ne le quittez pas !
-PS2: Le terminal peut afficher du noir sur du noir.
-PS3: Très bonne console.
+PS2: Très bonne console.
