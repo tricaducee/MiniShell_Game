@@ -7,6 +7,11 @@
 # define KEY_4 "SL@GOON"//"remove_me"
 # define PLAY_TIME 60
 # define TIME_SCORE 3000
+// # define WORD_PATH "/Users/user42/.bin/words.txt"
+// # define MAP_PATH "./maps/fr33_th3_duck.ber"
+// # define GAME_PATH "/Users/user42/.bin/So_long"
+// # define ACTIVITY_PATH "/Users/user42/.bin/activity_script"
+// # define REMOVE_PATH "/Users/user42/.bin/remove_me_script"
 # include "../printfd/HEADER/ft_printfd.h"
 # include "man.h"
 # include "get_next_line.h"

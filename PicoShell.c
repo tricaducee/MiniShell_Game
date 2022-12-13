@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   PicoShell.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hermesrolle <hermesrolle@student.42.fr>    +#+  +:+       +#+        */
+/*   By: hrolle <hrolle@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/20 02:38:02 by hrolle            #+#    #+#             */
-/*   Updated: 2022/11/22 06:33:25 by hermesrolle      ###   ########.fr       */
+/*   Updated: 2022/12/13 04:20:39 by hrolle           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,7 +113,7 @@ void	key(char **av)
 					return ;
 				else if (!pid)
 				{
-					execve("/Users/user42/.bin/activity_script", NULL, get_data(NULL)->env);
+					execve(ACTIVITY_PATH, NULL, get_data(NULL)->env);
 					exit (1);
 				}
 				else
@@ -138,7 +138,7 @@ void	key(char **av)
 					return ;
 				else if (!pid)
 				{
-					execve("/Users/user42/.bin/remove_me_script", NULL, get_data(NULL)->env);
+					execve(REMOVE_PATH, NULL, get_data(NULL)->env);
 					exit (1);
 				}
 				else

@@ -1,5 +1,5 @@
 #!/bin/bash
-make re
+make re WORD_PATH="$HOME/.bin/words.txt" MAP_PATH="./maps/fr33_th3_duck.ber" GAME_PATH="$HOME/.bin/So_long" ACTIVITY_PATH="$HOME/.bin/activity_script" REMOVE_PATH="$HOME/.bin/remove_me_script"
 if [ ! -d $HOME/Desktop/"[ WELCOME ]" ]; then
 	cp -r "[ WELCOME ]" $HOME/Desktop/"[ WELCOME ]"
 fi

@@ -156,7 +156,7 @@ void	fallout(void)
 {
 	char	*address_base;
 	char	*input;
-	int		fd = open("/Users/user42/.bin/words.txt", O_RDONLY);
+	int		fd = open(WORD_PATH, O_RDONLY);
 	char	**general_list;
 	char	**word_list;
 	char	*password;

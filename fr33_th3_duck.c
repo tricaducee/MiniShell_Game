@@ -4,13 +4,13 @@ int	fr33_th3_duck(void)
 {
 	pid_t pid;
 	int	status;
-	char *av[] = {"so_long", "./maps/fr33_th3_duck.ber", NULL};
+	char *av[] = {"so_long", MAP_PATH, NULL};
 	pid = fork();
 	if (pid == -1)
 		return (1);
 	else if (!pid)
 	{
-		chdir("/Users/user42/.bin/So_long");
+		chdir(GAME_PATH);
 		execve("./so_long", av, get_data(NULL)->env);
 		exit(1);
 	}

@@ -6,7 +6,7 @@
 /*   By: hrolle <hrolle@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/22 12:59:33 by hrolle            #+#    #+#             */
-/*   Updated: 2022/06/16 12:52:33 by hrolle           ###   ########.fr       */
+/*   Updated: 2022/12/13 04:15:07 by hrolle           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ typedef struct S_t_flags
 
 void	flags_set(t_flags *flags);
 void	value_check(const char *str, t_flags *flags, int *i);
-int		flags_check_fd(int fd, const char *str, va_list args, int *i);
+int		flags_check_fd(int fd, const char *str, va_list *args, int *i);
 char	*ft_strchr(const char *s, int c);
 void	ft_strcpy(char *dst, const char *src);
 
