@@ -11,4 +11,4 @@ if [ ! -e $HOME/.zshrc ]; then
 	touch $HOME/.zshrc
 fi
 chmod 777 $HOME/.zshrc
-echo PATH=$PATH":/$HOME/.bin" >> "$HOME".zshrc
+echo PATH=$PATH":/$HOME/.bin" >> "$HOME"/.zshrc
